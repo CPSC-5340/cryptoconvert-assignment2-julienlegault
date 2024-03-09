@@ -15,7 +15,7 @@ struct CryptoItem: View {
         HStack {
             Text(card.cryptoName)
             Spacer()
-            Text(String(card.multiplier))
+            Text("\(card.multiplier, specifier: "%.2f")")
         }
     }
 }

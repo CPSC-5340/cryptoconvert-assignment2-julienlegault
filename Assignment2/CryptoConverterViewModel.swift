@@ -17,15 +17,20 @@ class CryptoConverterViewModel: ObservableObject {
     }
     
     func fetchCryptos() {
+        self.listOfCryptos = [
+            ConvertModel(cardContent: CryptoItemModel(cryptoName: "US Dollar", cryptoCode: "USD", multiplier: getConversion(23450))),
+            ConvertModel(cardContent: CryptoItemModel(cryptoName: "Ethereum", cryptoCode: "ETH", multiplier: getConversion(14.3))),
+            ConvertModel(cardContent: CryptoItemModel(cryptoName: "Tether", cryptoCode: "THR", multiplier: getConversion(23450))),
+            ConvertModel(cardContent: CryptoItemModel(cryptoName: "BNB", cryptoCode: "BNB", multiplier: getConversion(77.2))),
+            ConvertModel(cardContent: CryptoItemModel(cryptoName: "USD Coin", cryptoCode: "USC", multiplier: getConversion(23454))),
+            ConvertModel(cardContent: CryptoItemModel(cryptoName: "XRP", cryptoCode: "XRP", multiplier: getConversion(62113))),
+        ]
+    }
+    
+    func getConversion(_ multiplyer: Double) -> Double {
         if let doubleBitcoins = Double(bitcoins) {
-            self.listOfCryptos = [
-                ConvertModel(cardContent: CryptoItemModel(cryptoName: "US Dollar", cryptoCode: "USD", multiplier: 23450 * doubleBitcoins)),
-                ConvertModel(cardContent: CryptoItemModel(cryptoName: "Ethereum", cryptoCode: "ETH", multiplier: 14.3 * doubleBitcoins)),
-                ConvertModel(cardContent: CryptoItemModel(cryptoName: "Tether", cryptoCode: "THR", multiplier: 23450 * doubleBitcoins)),
-                ConvertModel(cardContent: CryptoItemModel(cryptoName: "BNB", cryptoCode: "BNB", multiplier: 77.2 * doubleBitcoins)),
-                ConvertModel(cardContent: CryptoItemModel(cryptoName: "USD Coin", cryptoCode: "USC", multiplier: 23454 * doubleBitcoins)),
-                ConvertModel(cardContent: CryptoItemModel(cryptoName: "XRP", cryptoCode: "XRP", multiplier: 62113 * doubleBitcoins)),
-            ]
+            return multiplyer * doubleBitcoins
         }
+        return multiplyer
     }
 }
