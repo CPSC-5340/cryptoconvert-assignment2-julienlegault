@@ -14,6 +14,8 @@
 		F9FD8CDF2B9BA76800CE2EB1 /* CurrencyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FD8CDE2B9BA76800CE2EB1 /* CurrencyItem.swift */; };
 		F9FD8CE12B9BA7A000CE2EB1 /* CurrencyConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FD8CE02B9BA7A000CE2EB1 /* CurrencyConverterViewModel.swift */; };
 		F9FD8CE32B9BA7C300CE2EB1 /* ConvertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FD8CE22B9BA7C300CE2EB1 /* ConvertModel.swift */; };
+		F9FD8CE52B9BD36100CE2EB1 /* CryptoConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FD8CE42B9BD36100CE2EB1 /* CryptoConverterViewModel.swift */; };
+		F9FD8CE72B9BD56B00CE2EB1 /* CryptoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FD8CE62B9BD56B00CE2EB1 /* CryptoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		F9FD8CDE2B9BA76800CE2EB1 /* CurrencyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyItem.swift; sourceTree = "<group>"; };
 		F9FD8CE02B9BA7A000CE2EB1 /* CurrencyConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewModel.swift; sourceTree = "<group>"; };
 		F9FD8CE22B9BA7C300CE2EB1 /* ConvertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertModel.swift; sourceTree = "<group>"; };
+		F9FD8CE42B9BD36100CE2EB1 /* CryptoConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoConverterViewModel.swift; sourceTree = "<group>"; };
+		F9FD8CE62B9BD56B00CE2EB1 /* CryptoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			children = (
 				AC8A63A529B59BEC00C32694 /* Assignment2App.swift */,
 				AC8A63A729B59BEC00C32694 /* Converter.swift */,
+				F9FD8CE62B9BD56B00CE2EB1 /* CryptoItem.swift */,
+				F9FD8CE42B9BD36100CE2EB1 /* CryptoConverterViewModel.swift */,
 				F9FD8CE22B9BA7C300CE2EB1 /* ConvertModel.swift */,
 				F9FD8CDE2B9BA76800CE2EB1 /* CurrencyItem.swift */,
 				F9FD8CE02B9BA7A000CE2EB1 /* CurrencyConverterViewModel.swift */,
@@ -146,11 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FD8CE52B9BD36100CE2EB1 /* CryptoConverterViewModel.swift in Sources */,
 				F9FD8CE12B9BA7A000CE2EB1 /* CurrencyConverterViewModel.swift in Sources */,
 				AC8A63A829B59BEC00C32694 /* Converter.swift in Sources */,
 				AC8A63A629B59BEC00C32694 /* Assignment2App.swift in Sources */,
 				F9FD8CDF2B9BA76800CE2EB1 /* CurrencyItem.swift in Sources */,
 				F9FD8CE32B9BA7C300CE2EB1 /* ConvertModel.swift in Sources */,
+				F9FD8CE72B9BD56B00CE2EB1 /* CryptoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
